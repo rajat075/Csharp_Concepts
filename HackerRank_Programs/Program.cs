@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HackerRank_Programs.Extensions;
 using HackerRank_Programs.Problems;
+using HackerRank_Programs.Problems.Loops;
 
 namespace HackerRank_Programs
 {
@@ -12,28 +13,31 @@ namespace HackerRank_Programs
     {
         static void Main(string[] args)
         {
-            WeightedUniformStrings obj = new WeightedUniformStrings();
+            LoopDemo obj = new LoopDemo();
+            obj.ForLoopDemo();
 
-            Console.WriteLine('a'.GetASCII());
+            //WeightedUniformStrings obj = new WeightedUniformStrings();
 
-            Dictionary< char , int > charWeightTable = new Dictionary<char, int>();
+            //Console.WriteLine('a'.GetASCII());
 
-
-            char EntryPointChar = 'a';
-            int EntryPointWeight = 1;
-            int startAscii = EntryPointChar.GetASCII();
-            int exitAscii = startAscii + 26;
+            //Dictionary< char , int > charWeightTable = new Dictionary<char, int>();
 
 
-            for (int currentAscii = startAscii; currentAscii < exitAscii ; currentAscii++)
-                charWeightTable.Add(Convert.ToChar(currentAscii), 
-                           currentAscii - startAscii + EntryPointWeight);
+            //char EntryPointChar = 'a';
+            //int EntryPointWeight = 1;
+            //int startAscii = EntryPointChar.GetASCII();
+            //int exitAscii = startAscii + 26;
 
-            foreach (var charWeightTableRow in charWeightTable)
-            {
-                Console.WriteLine(charWeightTableRow.Key + " " + charWeightTableRow.Value);
-            }
-            Console.ReadLine();
+
+            //for (int currentAscii = startAscii; currentAscii < exitAscii ; currentAscii++)
+            //    charWeightTable.Add(Convert.ToChar(currentAscii), 
+            //               currentAscii - startAscii + EntryPointWeight);
+
+            //foreach (var charWeightTableRow in charWeightTable)
+            //{
+            //    Console.WriteLine(charWeightTableRow.Key + " " + charWeightTableRow.Value);
+            //}
+            //Console.ReadLine();
         }
     }
 }

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Extensions\CharExtension.cs" />
     <Compile Include="Helpers\Converters.cs" />
+    <Compile Include="Problems\Loops\LoopDemo.cs" />
     <Compile Include="Problems\WeightedUniformStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
